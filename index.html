@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Controle de gastos</title>
+</head>
+
+<body>
+    <div class="main">
+        <h2>Controle de gastos</h2>
+        <h4>Saldo</h4>
+
+        <h1 id="balance" class="balance">R$ 0.00</h1>
+
+        <div class="bank">
+            <div>
+                <h4>Ganhos</h4>
+                <p id="money-plus" class="money plus">+ R$ 0.00</p>
+            </div>
+
+            <div>
+                <h4>Gastos</h4>
+                <p id="money-minus" class="money minus">- R$ 0.00</p>
+            </div>
+        </div>
+
+        <h3>Itens</h3>
+        <hr>
+        <ul id="transactions" class="transactions"></ul>
+        <h3>Adicionar Item</h3>
+        <hr>
+        <form id="form">
+            <div class="form-control">
+                <label for="text">Nome</label>
+                <input autofocus type="text" id="text" placeholder="Nome do item">
+            </div>
+
+            <div class="form-control">
+                <label for="amount">Valor<br />
+                    <small>Positivo(+) = Ganhos<br> Negativo(-) = Gastos</small>
+                </label>
+                <input type="number" id="amount" placeholder="Valor do item" step="0.01">
+            </div>
+
+            <div class="form-control">
+                <label for="qnt">Quantidade</label>
+                <input type="number" id="qnt" min="1" value="1" placeholder="Quantidade de item">
+            </div>
+
+            <button class="button">Adicionar</button>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
