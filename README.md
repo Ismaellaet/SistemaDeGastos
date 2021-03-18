@@ -1,4 +1,4 @@
-# SistemaDeGastos
+# Sistema de controle de gastos
 Projeto pessoal para testar meus conhecimentos de HTML, CSS, JAVASCRIPT
 
 ## Função 
